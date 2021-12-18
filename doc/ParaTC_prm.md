@@ -175,4 +175,51 @@
 &emsp;As you can see, most parameters are followed by some comments to illustrate its function.
 
 ## BasicParam
-&emsp;**BasicParam** specifies several basic parameters, e.g. mesh options, physical properties.
+&emsp;**BasicParam** specifies several basic parameters, e.g. input/output options, physical properties.
+
+* `RestartFlag`: logical type. Restart or not. If RestartFlag=.true., the simulation will start from a prestored restarting file.
+* `FlowType`: integer type. Specify the flow type, 1=Channel, 2=Half channel.
+* `ubulk`: real type. Mean bulk velocity in x-direction. This parameter is only used for wall-bounded turbulent channel flows (channel or half channel) to set the initial mean streamwise velocity.
+* `IsUxConst`:  logical type. Whether ux is constant or not. This parameter is only used for wall-bounded turbulent channel flows (channel or half channel). If IsUxConst=.true., the turbulent channel flow is driven by a uniform pressure gradient, which varies in time to maintain a constant mass flow rate in streamwise (x) direction. If IsUxConst=.false., the uniform pressure gradient will be also constant in time, which is set by parameter `gravity`.
+* `IsUseCRF`: logical type. Whether use Converting Reference Frame or not. If so, the computations are performed in a moving reference frame for which the bulk velocity (net streamwise mass flux) is zero.
+* `uCRF`: Velocity of the Converting Reference Frame. If `IsUseCRF=F`, this parameter does not work.
+* `xlx`: real type. Domain length in x-direction.
+* `yly`: real type. Domain length in y-direction.
+* `zlz`: real type. Domain length in z-direction.
+* `nxp`: integer type. Grid point number in x-direction. **Note:** If nxp=129, there will be 129 grid points in x-direction, and the x-domain will be divided into 128 parts.
+* `nyp`: integer type. Grid point number in y-direction.
+* `nzp`: integer type. Grid point number in z-direction.
+* `xnu`: real type. Kinematic viscosity.
+* `gravity`: real vector containing 3 components. Gravity or other constant body forces (if any), which can be used to drive the flow.
+* `FluidDensity`: fluid density
+* `dtMax`: real type. Maxium allowable time step. If iCFL=1, `dt` will adjust according to the allowable CFL number. `dt=min{dtMax, CFLc/max(|u|/dx+|v|/dy+|w|/dz)}`. If iCFL=2, `dt=dtMax`. 
+* `iCFL`: integer type. Whether use CFL condition to change time step dynamically or not. 1:yes, 2:no.
+* `CFLc`: real type. Allowable CFL parameter. If iCFL=2, this parameter will not work.
+* `ifirst`: integer type. First iteration.
+* `ilast`:  integer type. Last iteration.
+* `ischeme`: integer type. Specify the time integral scheme. 1=AB2, 2=RK2, 3=RK3.
+* `FFTW_plan_type`: integer type. 1=FFTW_MEASURE, 2=FFTW_ESTIMATE. **Note:** In my practice, using *FFTW_MEASURE* is faster than *FFTW_ESTIMATE*, while *FFTW_MEASURE* might lead to different *FFTW_plan*, even for the same simulation case. And further, different *FFTW_plan* will result in slight different DFT values (The last several digits of the decimal point might be different). If you want to debug the code, please use *FFTW_ESTIMATE*, which will lead to the same DFT values for a specific case.
+* `uxBcValue`: real vector containing 6 components to specify the u-velocity Bc values, and these values will ONLY be used corresponding to the no-slip Bc.
+* `uyBcValue`: real vector containing 6 components to specify the v-velocity Bc values.
+* `uzBcValue`: real vector containing 6 components to specify the w-velocity Bc values.
+* `ivstats`: integer type. Time step interval for statistics calculation. The statistic value will be calculated every `ivstats` time step.
+* `SaveStat`: integer type. Output Statistics file frequency. The statistic value will be written to the folder `Res_Dir` every `SaveStat` time step.
+* `SaveVisu`: integer type. Output visualizing file frequency. The visualizing data will be written to the folder `Res_Dir` every `SaveVisu` time step.
+* `BackupFreq`: integer type. Output restarting file frequency. The restarting file will be be written to the folder `RestartDir` every `BackupFreq` time step, and the previous restarting file will be deleted in order to save memory room.
+* `RunName`: character type. Run name string.
+* `Res_Dir`: character type. The folder to store result data.
+* `RestartDir`: character type. The folder to store restart data.
+* `Cmd_LFile_Freq`: integer type. Reporting frequency. Reporting information  will be printed to the terminal and written to the logfile every `Cmd_LFile_Freq` time step.
+* `LF_file_lvl`: integer type. Logfile report level. From 1 to 5. `5` means every message will be reported into logfile, smaller `LF_file_lvl` corresponds to less reported message.
+* `LF_cmdw_lvl`: integer type. Terminal report level. From 1 to 5.
+* `p_row`: integer type. Number of processors in row pencil.
+* `p_col`: integer type. Number of processors in column pencil.
+* `vel_limit`: real type. Maximum allowable velocity. If `min{|u|,|v|,|w|}>vel_limit`, the program will abort.
+* `div_limit`: real type. Maximum allowable divergence. If `max{abs(du/dx +dv/dy + dw/dz)}>div_limit`, the program will abort.
+
+## MeshSection
+* `nSection`: yly will be diveded into "nSection" part
+
+## MeshOptions
+&emsp;**MeshOption** specifies several parameters for y-mesh.
+
