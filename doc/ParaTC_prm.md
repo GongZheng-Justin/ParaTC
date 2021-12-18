@@ -221,7 +221,7 @@
 * `nSection`: integer type. yly will be diveded into "nSection" part
 
 ## MeshOptions
-&emsp;**MeshOption** specifies several parameters for y-mesh.
+&emsp;**MeshOptions** specifies several parameters for y-mesh.
 
 * `SectionLength`: real vector type containing `nSection` components. relative length for every section. If nSection=2, and SectionLength=1,3, yly is further divided into 1/4*yly and 3/4*yly.
 * `nycSection`: integer vector type containing `nSection` components. y mesh number for every section. sum(nycSection)=nyc.
@@ -229,3 +229,9 @@
 * `StretOption`: integer vector type containing `nSection` components. Which side is streatched. 0:bottom;  1:top.
 * `SectioncStret`: integer vector type containing `nSection` components. Stretching parameter. if StretType=0, this parameter doesn't work.
 
+## SpectraOptions
+&emsp;**SpectraOptions** designates options for energy spectra calculation.
+
+* `clcSpectra1D`: logical type. Calculate 1D energy spectra or not.
+*  `ivSpec`: integer type. Time step interval for energy spectra calculation. The energy spectr will be calculated every `ivSpec` time step.
+* `jForLCS`: integer type. Reference y-index for Linear coherent 
