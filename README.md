@@ -16,3 +16,24 @@
 * Navier-Stokes equations,coupled with an active passive scalar transport equation, are simulated.![](doc/GoverningEquation.png)
 * Fourth-order spatial scheme is used for periodic directions, i.e., streamwise and spanwise directions. Second-order scheme is used in wall-normal direction.
 *  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved.![](doc/Scaling.png)
+
+## Installation :briefcase:
+&emsp;As for compilation, present solver has the following two prerequisites:
+* MPI
+* Gfortran/Intel Fortran (Supporting Fortran 2003 or higher version)
+
+&emsp;**FFTW-3.3.9** library has been explicitly included in the directory `./src/ThirdParty/fftw/`, so compiling and additional linking to external FFTW are avoided. (Note: Recompiling FFTW for first use is strongly recommended.)
+&emsp;After entering the folder `ParaTC-master/` in terminal, you can compile the code as follows:
+```
+1. chmod a+x ./mymake.sh
+2. ./mymake.sh
+3. choose the correct compiler you use, and the executable you want to compile, following guidances printed in the terminal
+```
+&emsp;Yon can also compile the `interpolateField` code in the folder `./Tool/interpolateField/` by typing:
+```
+1. cd ./Tool/interpolateField
+2. chmod a+x ./makeInterp.sh
+3. ./makeInterp.sh
+4. choose the correct compiler you use, and the executable you want to compile, following guidances printed in the terminal
+5. cd ../..
+```
