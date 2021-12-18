@@ -1,4 +1,4 @@
-This folder contains the input file(s) for benchmark of Stratified turbulent flow.
+This folder contains the input file(s) for benchmark of Stratified turbulent flows.
 
 Exe name: 
   ParaTC (Compiled with -DScalarFlow)
