@@ -1,0 +1,56 @@
+ **************************************************************************
+ Log file for run: interp1
+ **************************************************************************
+
+&BASICPARAM
+ NXPOLD=97         ,
+ NYPOLD=97         ,
+ NZPOLD=97         ,
+ NXPNEW=193        ,
+ NYPNEW=97         ,
+ NZPNEW=193        ,
+ BCOPTION= 2*0          ,-1         ,-2         , 2*0          ,
+ UXBCVALUE= 6*0.0000000000000000       ,
+ UYBCVALUE= 6*0.0000000000000000       ,
+ UZBCVALUE= 6*0.0000000000000000       ,
+ RUNNAME="interp1                                                         ",
+ RES_DIR="./                                                              ",
+ CMD_LFILE_FREQ=5          ,
+ LF_FILE_LVL=5          ,
+ LF_CMDW_LVL=3          ,
+ P_ROW=4          ,
+ P_COL=2          ,
+ YLY=  1.0000000000000000     ,
+ ISUXCONST=F,
+ UBULK= 0.66666666666666663     ,
+ OLDRESTARTNAME="../../CFD/Restart/RestartForTurbidityCurrent0000001000          ",
+ NEWRESTARTNAME="../../CFD/Restart/RestartForTurbidityCurrent0000000000          ",
+ /
+&SCALARFLOWOPTIONS
+ ISSCALARCONST=T,
+ SCALARMEAN=  5.0000000000000001E-003,
+ SCALARBCOPTION= 2*-3         ,
+ SCALARBCVALUES= 2*4.6621911870693697       , 2*0.0000000000000000       ,
+ /
+&MESHSECTIONOLD
+ NSECTION=2          ,
+ /
+&MESHOPTIONSOLD
+ SECTIONLENGTH= 2*1.0000000000000000       ,
+ SECTIONCSTRET= 2*1.0000000000000000       ,
+ NYCSECTION= 2*48         ,
+ STRETTYPE= 2*2          ,
+ STRETOPTION=0          ,1          ,
+ /
+&MESHSECTIONNEW
+ NSECTION=2          ,
+ /
+&MESHOPTIONSNEW
+ SECTIONLENGTH= 2*1.0000000000000000       ,
+ SECTIONCSTRET= 2*1.0000000000000000       ,
+ NYCSECTION= 2*48         ,
+ STRETTYPE= 2*2          ,
+ STRETOPTION=0          ,1          ,
+ /
+
+ >> Good job! interpolateField finished successfully!
