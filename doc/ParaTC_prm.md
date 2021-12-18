@@ -264,3 +264,6 @@
 ## SaveScalarOption
 * `save_scalar`: logical type. Save save_scalar field or not.
 
+## ScalarFlowOptions
+&emsp;**ScalarFlowOptions** sets B.C. options for scalar field.
+
