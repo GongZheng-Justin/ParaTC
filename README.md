@@ -39,3 +39,18 @@
 ```
 &emsp;If the compiling process successfully, the executable file `ParaTC` will be appeared in the folder `ParaTC-master/`, and `interpolateField` will be included in the folder `./Tool/interpolateField/`.
 
+## Usage :book:
+&emsp;After compiling the code successfully, you can run the executable file like that:
+```
+mpirun -n [np] ./ParaTC [inputFile]
+```
+&emsp;Here:
+* `np` denotes the number of processors you use
+* `inputFile` is the name string for the input parameter file  
+
+&emsp;For instance, if you want to run the canonical closed-channel case at Re\tau=180, you can type the following words in your terminal:
+```
+mpirun -n 4 ./ParaTC ./Input/TurbCha0180_4th.standard
+```
+### Input file
+&emsp;The input file examples are stored in the folder `./Input/`. See  `./doc/ParaTC_prm.md` for detailed descriptions to the input file.
