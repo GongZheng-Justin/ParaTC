@@ -50,7 +50,7 @@ mpirun -n [np] ./ParaTC [inputFile]
 
 &emsp;For instance, if you want to run the canonical closed-channel case at Re\tau=180, you can type the following words in your terminal:
 ```
-mpirun -n 4 ./ParaTC ./Input/TurbCha0180_4th.standard
+mpirun -n 8 ./ParaTC ./Input/TurbCha0180_4th.standard
 ```
 ### Input file
 &emsp;The input file examples are stored in the folder `./Input/`. See  `./doc/ParaTC_prm.md` for detailed descriptions to the input file.
