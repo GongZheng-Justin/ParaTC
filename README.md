@@ -48,7 +48,7 @@ mpirun -n [np] ./ParaTC [inputFile]
 * `np` denotes the number of processors you use
 * `inputFile` is the name string for the input parameter file  
 
-&emsp;For instance, if you want to run the canonical closed-channel case at Re\tau=180, you can type the following words in your terminal:
+&emsp;For instance, if you want to run the canonical closed-channel case at Re$\tau$=180, you can type the following words in your terminal:
 ```
 mpirun -n 8 ./ParaTC ./Input/TurbCha0180_4th.standard
 ```
