@@ -54,3 +54,6 @@ mpirun -n 8 ./ParaTC ./Input/TurbCha0180_4th.standard
 ```
 ### Input file
 &emsp;The input file examples are stored in the folder `./Input/`. See  `./doc/ParaTC_prm.md` for detailed descriptions to the input file.
+
+## Contact and Feedback :email:
+&emsp;If you have any question, or want to contribute to the code, please don't hesitate to contact me: Zheng Gong (gongzheng_justin@outlook.com)
