@@ -234,4 +234,33 @@
 
 * `clcSpectra1D`: logical type. Calculate 1D energy spectra or not.
 *  `ivSpec`: integer type. Time step interval for energy spectra calculation. The energy spectr will be calculated every `ivSpec` time step.
-* `jForLCS`: integer type. Reference y-index for Linear coherent 
+* `jForLCS`: integer type. Reference y-index for Linear coherence spectrum.
+* `clcSpectra2D`: logical type. Calculate 2D energy spectra or not.
+* `nySpec2D`: integer type. Number of y-locations for 2D energy spectra.
+
+## Spectra2DOpt
+* `iySpec2D`: integer vector type containing `nySpec2D` components. index of y-locations for 2D energy spectra.
+
+## IO_Options
+&emsp;**IO_Options** sets input/output options.
+
+* `iskip`: integer type. Flow data will be written into output visualizing file every `iskip` grid mesh in x-dir.
+* `jskip`: integer type. Flow data will be written into output visualizing file every `jskip` grid mesh in y-dir.
+* `kskip`: integer type. Flow data will be written into output visualizing file every `kskip` grid mesh in z-dir.
+* `XDMF_SET_TYPE`: integer type. The output XDMF_SET_TYPE, 0: cell, 1:Node. 
+* `save_ux`: logical type. Save u-velocity or not.
+* `save_uy`: logical type. Save v-velocity or not.
+* `save_uz`: logical type. Save w-velocity or not.
+* `save_wx`: logical type. Save x-vorticity or not.
+* `save_wy`: logical type. Save y-vorticity or not.
+* `save_wz`: logical type. Save z-vorticity or not.
+* `save_wMag`: logical type. Save vorticity magnitude or not.
+* `save_pr`: logical type, Save pressure or not.
+* `save_Q_vor`: logical type. Save Q vortex criterion value or not.
+* `save_lamda2`: logical type. Save lamda2 vortex criterion value or not.
+* `WriteHistOld`: logical type. Write the old convective data (more exactly, the terms which are treated explicitly) to restart value or not.
+* `ReadHistOld`: logical type. Read the old convective data (more exactly, the terms which are treated explicitly) to restart value or not. This parameter, coupled with the previous one `WriteHistOld`, can help us to make the program restarting more flexible. Sometimes, we want to restart a `AB2` case from `RK3` case. `AB2` integral approach need the old convective data, while `RK3` method not. So, if we want to restart a `AB2` case from `RK3` case, we can set `ReadHistOld=F` for `AB2` case. If we want to restart a `AB2` case from a previous `AB2` case, we can set `ReadHistOld=T` for the new `AB2` case, and `WriteHistOld=T` for the previous case. If we want to restart a `RK3` case from `AB2` case, we can set `WriteHistOld=F` for the previous `AB2` case.
+
+## SaveScalarOption
+* `save_scalar`: logical type. Save save_scalar field or not.
+
