@@ -267,7 +267,7 @@
 ## ScalarFlowOptions
 &emsp;**ScalarFlowOptions** sets B.C. options for scalar field.
 
-`FallingVel`: real type. Particle Settling Velocity. 
+`FallingVel`: real type. Particle Settling Velocity.     
 `SchmidtNumber`: real type. Schmidt number. Schmidt number for gravity flow (Or called Prandtl number sometimes). Sc= nu/K, where K is the diffusivity coefficient. 
 `GravityEff`: real type. Effective Gravity magnitude. g_eff=Rg=(rho_s-rho_f)/rho_f* g for gravity flow. 
 `GravityDir`: real vector type containing 3 components. Unit gravity vector pointing at gravity direction. 
