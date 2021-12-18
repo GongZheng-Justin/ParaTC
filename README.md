@@ -15,3 +15,4 @@
 *  Periodic conditions are imposed in streamwise (x) and spanwise (z) directions.![](doc/SchematicDiagram.png)
 * Navier-Stokes equations,coupled with an active passive scalar transport equation, are simulated.![](doc/GoverningEquation.png)
 * Fourth-order spatial scheme is used for periodic directions, i.e., streamwise and spanwise directions. Second-order scheme is used in wall-normal direction.
+*  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved.![](doc/Scaling.png)
