@@ -218,8 +218,14 @@
 * `div_limit`: real type. Maximum allowable divergence. If `max{abs(du/dx +dv/dy + dw/dz)}>div_limit`, the program will abort.
 
 ## MeshSection
-* `nSection`: yly will be diveded into "nSection" part
+* `nSection`: integer type. yly will be diveded into "nSection" part
 
 ## MeshOptions
 &emsp;**MeshOption** specifies several parameters for y-mesh.
+
+* `SectionLength`: real vector type containing `nSection` components. relative length for every section. If nSection=2, and SectionLength=1,3, yly is further divided into 1/4*yly and 3/4*yly.
+* `nycSection`: integer vector type containing `nSection` components. y mesh number for every section. sum(nycSection)=nyc.
+* `StretType`: integer vector type containing `nSection` components. Whether y-mesh is stretched or not. 0:Uniform; 1:Tangent hyperbolic function; 2:Sine/cosine function; 3:Proportional sequence.
+* `StretOption`: integer vector type containing `nSection` components. Which side is streatched. 0:bottom;  1:top.
+* `SectioncStret`: integer vector type containing `nSection` components. Stretching parameter. if StretType=0, this parameter doesn't work.
 
