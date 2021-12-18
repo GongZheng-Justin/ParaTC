@@ -267,3 +267,10 @@
 ## ScalarFlowOptions
 &emsp;**ScalarFlowOptions** sets B.C. options for scalar field.
 
+`FallingVel`: real type. Particle Settling Velocity.
+`SchmidtNumber`: real type. Schmidt number. Schmidt number for gravity flow (Or called Prandtl number sometimes). Sc= nu/K, where K is the diffusivity coefficient.
+`GravityEff`: real type. Effective Gravity magnitude. g_eff=Rg=(rho_s-rho_f)/rho_f* g for gravity flow.
+`GravityDir`: real vector type containing 3 components. Unit gravity vector pointing at gravity direction.
+`ScalarBcOption`: integer vector type containing 2 components. Scalar boundary conditions for bottom and top walls, respectively.  -1: Dirichlet Bc. C = F; -2: Neumann Bc. dC/dy = S; -3: Robin Bc. dC/dy + F* C = S
+`ScalarBcValues`: real vector type containing 4 components. Assign F_b,F_t,S_b,S_t.
+`Scalar_InitValue`: real type. Initially, a uniform scalar field is set to the value of Scalar_InitValue.
