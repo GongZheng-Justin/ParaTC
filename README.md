@@ -34,7 +34,7 @@
 1. cd ./Tool/interpolateField
 2. chmod a+x ./makeInterp.sh
 3. ./makeInterp.sh
-4. choose the correct compiler you use, and the executable you want to compile, following guidances printed in the terminal
+4. choose the correct compiler you use, following guidances printed in the terminal
 5. cd ../..
 ```
 &emsp;If the compiling process successfully, the executable file `ParaTC` will be appeared in the folder `ParaTC-master/`, and `interpolateField` will be included in the folder `./Tool/interpolateField/`.
