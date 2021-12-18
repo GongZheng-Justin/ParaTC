@@ -1,2 +1,6 @@
 # ParaTC
-A high order finite difference solver for simulations of turbidity currents with high parallel efficiency
+&emsp;**Channel3d** is a high order finite difference solver for simulations of turbidity currents with high parallel efficiency:
+* MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements.
+* A [parallel Thomas algorithm](https://p-costa.github.io/) is also included to further reduce the communication overhead when solving tridiagonal equations.
+* Fourth-order spatial scheme is used for periodic directions, i.e., streamwise and spanwise directions. Second-order scheme is used in wall-normal direction.
+* 
