@@ -22,7 +22,7 @@
 * MPI
 * Gfortran/Intel Fortran (Supporting Fortran 2003 or higher version)
 
-&emsp;**FFTW-3.3.9** library has been explicitly included in the directory `./src/ThirdParty/fftw/`, so compiling and additional linking to external FFTW are avoided. (Note: Recompiling FFTW for first use is strongly recommended.)
+&emsp;**FFTW-3.3.9** library has been explicitly included in the directory `./src/ThirdParty/fftw/`, so compiling and additional linking to external FFTW are avoided. (**Note: Recompiling FFTW for first use is strongly recommended.**)
 &emsp;After entering the folder `ParaTC-master/` in terminal, you can compile the code as follows:
 ```
 1. chmod a+x ./mymake.sh
