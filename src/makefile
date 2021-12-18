@@ -14,7 +14,7 @@ exeName    =  ParaTC
 CFD_dir    =  
 CFDEdir    =  
 
-CFD_DEFS   = -DOverWriteFFT #-DScalarFlow #-DSaveNode
+CFD_DEFS   = -DOverWriteFFT -DScalarFlow #-DSaveNode
 CFDEDEFS   = -DSAVE_SINGLE
 
 CFD_inc    = -I./ThirdParty/fftw/
