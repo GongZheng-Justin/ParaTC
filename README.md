@@ -3,6 +3,7 @@
 * MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements.![](doc/SixPencils.png)
 * A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA) is included to further reduce the communication overhead when solving tridiagonal equations.![](doc/ParallelThomas.png)
 * An optimal search method is performed in the initializing stage to find the fast Poisson solver scheme among four alternatives for specific mesh configuration. The runtime ratio between traditional pencil-like Poisson solver and present solver is about 1.5.
+
   An example of the optimal PPE method search. Corresponding grid number is 9216×140×1400.
 ```
   Auto-tuning mode for Poisson Solver......
