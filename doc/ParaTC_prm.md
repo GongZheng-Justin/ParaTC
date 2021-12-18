@@ -172,3 +172,7 @@
   
 /End of NAMELIST "ScalarFlowOptions"
 ```
+&emsp;As you can see, most parameters are followed by some comments to illustrate its function.
+
+## BasicParam
+&emsp;**BasicParam** specifies several basic parameters, e.g. mesh options, physical properties.
