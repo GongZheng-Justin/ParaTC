@@ -5,8 +5,11 @@ CMP       =  gcc_MPI#intel_MPI
 
 # ============================ CFD part ============================
 # Choose pre-processing options
-#   -DDOUBLE_PREC - use double-precision
-#   -DSAVE_SINGLE - Save 3D data in single-precision
+#   -DOverWriteFFT : Overwrite the inout DFT or not.
+#   -DScalarFlow   : Calculate the scalar field or not.
+#   -DSaveNode     : Save the velocity field on grid node or cell center.
+#   -DSAVE_SINGLE  : Save binary data in single-precision.
+
 # CFD options
 
 exeName    =  ParaTC
