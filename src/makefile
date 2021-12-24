@@ -5,7 +5,7 @@ CMP       =  gcc_MPI#intel_MPI
 
 # ============================ CFD part ============================
 # Choose pre-processing options
-#   -DOverWriteFFT : Overwrite the inout DFT or not.
+#   -DOverWriteFFT : Overwrite the input DFT or not.
 #   -DScalarFlow   : Calculate the scalar field or not.
 #   -DSaveNode     : Save the velocity field on grid node or cell center.
 #   -DSAVE_SINGLE  : Save binary data in single-precision.
