@@ -286,7 +286,7 @@ contains
     inxz=one/(real(nxc,RK)*real(nzc,RK))
     DO jc=1,nyc
       jp=jc+1; jm=jc-1;
-      InterpY1= YinterpCoe(jp); InterpY2=one-InterpY1
+      InterpY1= YinterpCoe(jc); InterpY2=one-InterpY1
       cac=rdyc(jc);cacU=rdyc(jp); caj=rdyp(jc); SumVec=zero
       do kc=y1start(3),y1end(3)
         ks=kc-2;km=kc-1;kp=kc+1;ku=kc+2
@@ -392,7 +392,7 @@ contains
 
     ! nyp only
     jc=nyp; jm=jc-1; cac=rdyc(jc); SumVec=zero
-    InterpY1= YinterpCoe(jp); InterpY2=one-InterpY1
+    InterpY1= YinterpCoe(jc); InterpY2=one-InterpY1
     do kc=y1start(3),y1end(3)
       km=kc-1;kp=kc+1
       do ic=y1start(1),y1end(1)
