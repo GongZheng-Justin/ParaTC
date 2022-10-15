@@ -4,7 +4,7 @@
 <img src="./doc/SixPencils.png" width="40%" height="40%" div align=center />
 
 * A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA/) is included to further reduce the communication overhead when solving tridiagonal equations. 
-[Dr. Costa](https://p-costa.github.io/)
+ 
 <img src="./doc/ParallelThomas.png" width="40%" height="40%" div align=center />
 
 
