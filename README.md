@@ -25,7 +25,7 @@
 * Fourth-order spatial scheme is used for periodic directions, i.e., streamwise and spanwise directions. Second-order scheme is used in wall-normal direction.The partially semi-implicit time advancement scheme is used, where all the convective terms, besides and streamwise and spanwise viscous terms are treated explicitly, while vertical viscous term is treated implicitly.
 * The resulting statistical data are compared with those extracted from the simulations of spectral method, and very good agreements are achieved, even when we use the same grid resolution.
 *  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved. 
-<img src="./doc/Scaling.png" width="60%" height="60%" div align=center />
+<img src="./doc/Scaling.png" width="70%" height="70%" div align=center />
 
 ## Installation :briefcase:
 &emsp;As for compilation, present solver has the following two prerequisites:
