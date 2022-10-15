@@ -1,6 +1,7 @@
 # ParaTC
 &emsp;**ParaTC** is a high order finite difference solver for direct numerical simulations of turbidity currents with high parallel efficiency:
-* MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements.![](doc/SixPencils.png)
+* MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements.
+<img src="./doc/SixPencils.png" width="40%" height="40%" div align=center />
 * A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA) is included to further reduce the communication overhead when solving tridiagonal equations.![](doc/ParallelThomas.png)
 * An optimal search method is performed in the initializing stage to find the fast Poisson solver scheme among four alternatives for specific mesh configuration. The runtime ratio between traditional pencil-like Poisson solver and present solver is about 1.5.
 
