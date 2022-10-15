@@ -2,7 +2,7 @@
 &emsp;**ParaTC** is a high order finite difference solver for direct numerical simulations of turbidity currents with high parallel efficiency:
 * MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements.
 <img src="./doc/SixPencils.png" width="40%" height="40%" div align=center />
-* A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA/) is included to further reduce the communication overhead when solving tridiagonal equations.  
+* A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA/) is included to further reduce the communication overhead when solving tridiagonal equations. 
 <img src="./doc/ParallelThomas.png" width="40%" height="40%" div align=center />
 
 * An optimal search method is performed in the initializing stage to find the fast Poisson solver scheme among four alternatives for specific mesh configuration. The runtime ratio between traditional pencil-like Poisson solver and present solver is about 1.5.
@@ -24,7 +24,8 @@
 
 * Fourth-order spatial scheme is used for periodic directions, i.e., streamwise and spanwise directions. Second-order scheme is used in wall-normal direction.The partially semi-implicit time advancement scheme is used, where all the convective terms, besides and streamwise and spanwise viscous terms are treated explicitly, while vertical viscous term is treated implicitly.
 * The resulting statistical data are compared with those extracted from the simulations of spectral method, and very good agreements are achieved, even when we use the same grid resolution.
-*  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved.![](doc/Scaling.png)
+*  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved. 
+<img src="./doc/Scaling.png" width="40%" height="40%" div align=center />
 
 ## Installation :briefcase:
 &emsp;As for compilation, present solver has the following two prerequisites:
