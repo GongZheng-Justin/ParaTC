@@ -69,4 +69,4 @@ mpirun -n 8 ./ParaTC ./Input/TurbCha0180_4th.standard
 &emsp;If you have any question, or want to contribute to the code, please don't hesitate to contact me: Zheng Gong (gongzheng_justin@outlook.com)
 
 ## 
-![](doc/conc_small.png)
+<img src="./doc/conc_small.png" width="40%" height="40%" div align=center />
