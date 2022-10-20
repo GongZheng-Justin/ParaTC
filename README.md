@@ -30,6 +30,9 @@
 *  An approximate linear strong scaling performance is achieved, and the weak scaling performance is also improved. 
 <img src="./doc/Scaling.png" width="70%" height="70%" div align=center />
 
+## How to cite **ParaTC**?
+&emsp;Z. Gong, G. Deng, C. An, Z. Wu, X. Fu, A high order finite difference solver for simulations of turbidity currents with high parallel efficiency, Computers and Mathematics with Applications, 2022;128:21-33, https://doi.org/10.1016/j.camwa.2022.09.024.  
+
 ## Installation :briefcase:
 &emsp;As for compilation, present solver has the following two prerequisites:
 * MPI
