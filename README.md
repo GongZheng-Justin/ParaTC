@@ -24,6 +24,10 @@
 ## How to cite **ParaTC**?
 &emsp;Z. Gong, G. Deng, C. An, Z. Wu, X. Fu, A high order finite difference solver for simulations of turbidity currents with high parallel efficiency, Computers and Mathematics with Applications, 2022;128:21-33, https://doi.org/10.1016/j.camwa.2022.09.024.  
 
+## Notice 
+&emsp;**ParaTC** has been integrated into the CFD-DEM sovler **CP3d** as a sub-solver.
+
+
 ## Installation :briefcase:
 &emsp;As for compilation, present solver has the following two prerequisites:
 * MPI
