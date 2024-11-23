@@ -1,7 +1,7 @@
-# ParaTC
-## Notice :newspaper: 
+# Notice :newspaper: 
 &emsp;**ParaTC** has been integrated into the CFD-DEM sovler [**CP3d**](https://github.com/GongZheng-Justin/CP3d) as a sub-solver.
 
+# ParaTC
 &emsp;**ParaTC** is a high order finite difference solver for direct numerical simulations of turbidity currents with high parallel efficiency:
 * MPI parallelization by means of pencil distributed decomposition. In order to improve the parallel efficiency, we propose a new 2D pencil-like parallel configuration with totally 6 different pencil arrangements. 
 * A [parallel Thomas algorithm](https://github.com/MPMC-Lab/PaScaL_TDMA/) is included to further reduce the communication overhead when solving tridiagonal equations. 
